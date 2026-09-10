@@ -57,6 +57,10 @@
   background-color: #e0c3fc;
 }
 
+.button-blue {
+  background-color: #4361ee;
+}
+
 :root {
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
