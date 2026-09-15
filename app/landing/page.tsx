@@ -2,11 +2,13 @@
 
 import LandingHearder from "@/components/landing/LandingHeader"; 
 import LandingTutorial from "@/components/landing/LandingTutorial";
+import LandingDailyTracks from "@/components/landing/LandingDailyTracks"
 export default function Home() {
   return (
     <div className="min-h-screen w-full  flex flex-col gap-10 ">
    <LandingHearder/>
    <LandingTutorial />
+   <LandingDailyTracks/>
     </div>
   );
 }
