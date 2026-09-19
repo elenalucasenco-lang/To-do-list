@@ -35,7 +35,8 @@ export default function LandingHearder() {
             className=" bg-purple-600 p-1 text-sm font-semibold text-white  transition-all duration-300
               hover:-translate-y-1
               hover:scale-105              
-              active:scale-95"
+              active:scale-95
+              hover:bg-purple-600"
           >
             Login
           </Button>
@@ -44,7 +45,8 @@ export default function LandingHearder() {
             className=" bg-purple-600 p-1 text-sm font-semibold text-white  transition-all duration-300
               hover:-translate-y-1
               hover:scale-105              
-              active:scale-95"
+              active:scale-95
+            hover:bg-purple-600"
           >
             Get started
           </Button>

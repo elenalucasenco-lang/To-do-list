@@ -77,16 +77,27 @@ export default function LandingProgressTracking() {
               ))}
             </div>
 
-            <div className="flex flex-row gap-2">
+           <div className="flex flex-row gap-2">
               <Button
                 className=" bg-purple-600 p-4 text-sm font-semibold text-white  transition-all duration-300
               hover:-translate-y-1
               hover:scale-105              
-              active:scale-95"
+              active:scale-95
+              
+              hover:bg-purple-600"
               >
                 Get Started
               </Button>
-              <Button className="bg-white text-black border-2 border-gray-200 p-4">View Tasks</Button>
+              <Button className=" p-4 text-sm font-semibold text-black border-purple-500  transition-all duration-300
+              hover:-translate-y-1
+              hover:scale-105              
+              active:scale-95
+              hover:text-white
+              hover:bg-purple-600
+               bg-white
+              ">
+                View Tasks
+              </Button>
             </div>
           </div>
         </div>
@@ -129,11 +140,22 @@ export default function LandingProgressTracking() {
                 className=" bg-purple-600 p-4 text-sm font-semibold text-white  transition-all duration-300
               hover:-translate-y-1
               hover:scale-105              
-              active:scale-95"
+              active:scale-95
+              
+              hover:bg-purple-600"
               >
                 Get Started
               </Button>
-              <Button className="bg-white text-black border-2 border-gray-200 p-4">View Tasks</Button>
+              <Button className=" p-4 text-sm font-semibold text-black border-purple-500  transition-all duration-300
+              hover:-translate-y-1
+              hover:scale-105              
+              active:scale-95
+              hover:text-white
+              hover:bg-purple-600
+               bg-white
+              ">
+                View Tasks
+              </Button>
             </div>
           </div>
         </div>
