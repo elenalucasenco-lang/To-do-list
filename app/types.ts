@@ -1,8 +1,7 @@
 export interface Task {
   id: string;
-  startTime: number;
-  endTime: number;
   title: string;
-  description: string;
+  category: "Work" | "Focus" | "Personal";
+  priority: "High-Priority" | "Medium" | "Low";
   completed: boolean;
 }

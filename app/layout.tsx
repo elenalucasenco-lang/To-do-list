@@ -3,7 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Core/Header";
 import QueryProvider from "../components/layout/QueryProvider";
-
+import LandingFooter from "@/components/landing/LandingFooter";
+import LandingHeader from "@/components/landing/LandingHeader";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -25,10 +26,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className=" flex flex-col ">
         <QueryProvider>
-          <Header />
+          <LandingHeader/>
           {children}
+          <LandingFooter/>
         </QueryProvider>
       </body>
     </html>
