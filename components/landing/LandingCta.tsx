@@ -17,9 +17,9 @@
 //         <Button
 //           className=" bg-purple-600 p-4 text-sm font-semibold text-white  transition-all duration-300
 //               hover:-translate-y-1
-//               hover:scale-105              
+//               hover:scale-105
 //               active:scale-95
-              
+
 //               hover:bg-purple-600"
 //         >
 //           Get Started
@@ -27,7 +27,7 @@
 //         <Button
 //           className=" p-4 text-sm font-semibold text-black border-purple-500  transition-all duration-300
 //               hover:-translate-y-1
-//               hover:scale-105              
+//               hover:scale-105
 //               active:scale-95
 //               hover:text-white
 //               hover:bg-purple-600
@@ -42,9 +42,8 @@
 //   );
 // }
 
-
 "use client";
-
+import Link from "next/link"
 import type { ReactNode } from "react";
 import {
   motion,
@@ -146,7 +145,9 @@ export default function LandingCta() {
             </motion.div>
 
             <motion.div variants={itemVariants} className="flex flex-col">
-              <h2 className="text-sm font-semibold">Ready to find your flow?</h2>
+              <h2 className="text-sm font-semibold">
+                Ready to find your flow?
+              </h2>
               <p className="text-gray-800">
                 Join thousands of users who plan their day with Flowly.
               </p>
@@ -154,8 +155,9 @@ export default function LandingCta() {
           </div>
 
           <div className="flex gap-2">
-            <ActionButton>Get Started</ActionButton>
-            <ActionButton kind="secondary">Learn more</ActionButton>
+            <Link href={"/getStarted"}>
+              <ActionButton>Get Started</ActionButton>
+            </Link>
           </div>
         </motion.div>
       </section>

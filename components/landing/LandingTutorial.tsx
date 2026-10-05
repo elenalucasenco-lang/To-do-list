@@ -83,6 +83,7 @@
 
 import { useSyncExternalStore } from "react";
 import Image from "next/image";
+import Link from "next/link"
 import {
   motion,
   MotionConfig,
@@ -260,6 +261,7 @@ export default function LandingTutorial() {
             whileTap={BUTTON_TAP}
             className="rounded-md"
           >
+            <Link href={"/getStarted"}>
             <Button className="group relative overflow-hidden bg-purple-600 font-bold text-white hover:bg-purple-700">
               <span
                 aria-hidden="true"
@@ -268,6 +270,7 @@ export default function LandingTutorial() {
 
               <span className="relative">Get started</span>
             </Button>
+            </Link>
           </motion.div>
         </motion.div>
 

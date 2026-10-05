@@ -167,6 +167,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import type { ReactNode } from "react";
 import Image, { type StaticImageData } from "next/image";
 import {
@@ -344,7 +345,9 @@ function TabPanel({ tab }: TabPanelProps) {
         </motion.ul>
 
         <div className="flex gap-2">
+          <Link href={"/getStarted"} >
           <AnimatedButton>Get Started</AnimatedButton>
+          </Link>
           <AnimatedButton kind="secondary">{secondaryAction}</AnimatedButton>
         </div>
       </motion.div>

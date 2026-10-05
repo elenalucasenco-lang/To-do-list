@@ -1,7 +1,15 @@
+// "use client";
+
 // import FlowlyLogo from "../../public/landingImg/FlowlyLogo.png";
 // import Image from "next/image";
+// import Link from "next/link";
 // import { Button } from "../ui/button";
+
 // export default function LandingHearder() {
+//   const scrollTo = (id: string) => {
+//     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+//   };
+
 //   return (
 //     <div className="flex justify-center pt-10 relative">
 //       <div className="flex items-center  w-full max-w-7xl px-10 justify-between border-2 border-gray-100 shadow-xl rounded-3xl">
@@ -13,18 +21,21 @@
 //           <button
 //             className="text-sm font-bold transition-all duration-300 
 //               hover:-translate-y-1 hover:text-purple-600 hover:bg-purple-100 rounded-xl p-2"
+//             onClick={() => scrollTo("home")}
 //           >
 //             How it works
 //           </button>
 //           <button
-//              className="text-sm font-semibold transition-all duration-300
+//             className="text-sm font-semibold transition-all duration-300
 //               hover:-translate-y-1 hover:text-purple-600 hover:bg-purple-100 rounded-xl p-2"
+//             onClick={() => scrollTo("workspace")}
 //           >
 //             Features
 //           </button>
 //           <button
 //             className="text-sm font-semibold transition-all duration-300
 //               hover:-translate-y-1 hover:text-purple-600 hover:bg-purple-100 rounded-xl p-2"
+//             onClick={() => scrollTo("features")}
 //           >
 //             Home
 //           </button>
@@ -38,30 +49,32 @@
 //               active:scale-95
 //               hover:bg-purple-600"
 //           >
-//             Login
+//             SignIn
 //           </Button>
 
-//           <Button
-//             className=" bg-purple-600 p-1 text-sm font-semibold text-white  transition-all duration-300
+//           <Link href={"/getStarted"}>
+//             <Button
+//               className=" bg-purple-600 p-1 text-sm font-semibold text-white  transition-all duration-300
 //               hover:-translate-y-1
 //               hover:scale-105              
 //               active:scale-95
 //             hover:bg-purple-600"
-//           >
-//             Get started
-//           </Button>
+//             >
+//               Get started
+//             </Button>
+//           </Link>
 //         </div>
 //       </div>
 //     </div>
 //   );
 // }
 
-
-
 "use client";
 
 import { useState, type ReactNode } from "react";
 import Image from "next/image";
+import Link from "next/link";
+
 import {
   motion,
   MotionConfig,
@@ -244,6 +257,7 @@ export default function LandingHeader() {
           >
             <AnimatedButton>Login</AnimatedButton>
 
+ <Link href={"/getStarted"}>
             <AnimatedButton className="group relative overflow-hidden">
               <span
                 aria-hidden="true"
@@ -254,6 +268,7 @@ export default function LandingHeader() {
                 Get started
               </span>
             </AnimatedButton>
+</Link>
           </motion.div>
 
           <motion.button
