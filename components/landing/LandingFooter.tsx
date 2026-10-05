@@ -121,7 +121,6 @@
 //   );
 // }
 
-
 "use client";
 
 import type { ReactNode } from "react";
@@ -311,13 +310,15 @@ export default function LandingFooter() {
               whileTap={BUTTON_TAP}
               className="mt-6 rounded-md"
             >
-              <Button className="group relative w-full overflow-hidden bg-purple-600 p-4 text-sm font-semibold text-white transition-colors duration-300 hover:bg-purple-700">
-                <span
-                  aria-hidden="true"
-                  className="pointer-events-none absolute inset-y-0 -left-full w-1/2 skew-x-[-20deg] bg-white/30 transition-transform duration-700 ease-out group-hover:translate-x-[500%] motion-reduce:hidden"
-                />
-                <span className="relative">Get started</span>
-              </Button>
+              <Link href={"/getStarted"}>
+                <Button className="group relative w-full overflow-hidden bg-purple-600 p-4 text-sm font-semibold text-white transition-colors duration-300 hover:bg-purple-700">
+                  <span
+                    aria-hidden="true"
+                    className="pointer-events-none absolute inset-y-0 -left-full w-1/2 skew-x-[-20deg] bg-white/30 transition-transform duration-700 ease-out group-hover:translate-x-[500%] motion-reduce:hidden"
+                  />
+                  <span className="relative">Get started</span>
+                </Button>
+              </Link>
             </motion.div>
           </motion.div>
         </motion.div>
@@ -345,7 +346,10 @@ export default function LandingFooter() {
             ))}
           </motion.nav>
 
-          <motion.div variants={fadeUpVariants} className="flex items-center gap-3">
+          <motion.div
+            variants={fadeUpVariants}
+            className="flex items-center gap-3"
+          >
             {SOCIAL_LINKS.map(({ icon: Icon, label, href }) => (
               <a
                 key={label}

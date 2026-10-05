@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import LandingTutorial from "@/components/landing/LandingTutorial";
 import LandingDailyTracks from "@/components/landing/LandingDailyTracks";
@@ -25,7 +25,9 @@ export default function LandingProject() {
         <LandingProgressTracking />
       </section>
 
-      <LandingCta />
+      <section >
+        <LandingCta />
+      </section>
     </div>
   );
 }
