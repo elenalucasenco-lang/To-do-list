@@ -5,3 +5,10 @@ export interface Task {
   priority: "High-Priority" | "Medium" | "Low";
   completed: boolean;
 }
+
+export interface User {
+  FullName: string;
+  Email: string;
+  PassWord: string | number;
+  id:string
+}
